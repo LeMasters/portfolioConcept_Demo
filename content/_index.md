@@ -1,4 +1,4 @@
 ---
 title: About
 ---
-About text: one or two short paragraphs about you. Say what you make, what you are best at, and what kind of work you are looking for. Write for the reader you most want to reach.
+Garrison is a faculty member in Games and Simulation at Miami University of Ohio.  He has taught at Catholic University of America, Marymount University, Georgetown University, and Miami.
