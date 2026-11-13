@@ -1,12 +1,13 @@
-- company: "Organization, e.g. a studio, lab, club, game jam or employer"
-  title: "Your role, e.g. Student Designer"
-  period: "Dates, e.g. Aug 2025 - Present"
-  context: "One line about the organization, e.g. A student studio that builds small games with community partners."
+- company: ETBD / CCA / Miami University
+  title: Assistant Teaching Professor
+  period: August 2023-Present
+  context: The Games and Simulation program offers a BS in Game Design within the
+    College of Creative Arts at Miami University of Ohio.
   bullets:
-    - "What you did, starting with a verb, e.g. Designed four levels for a museum puzzle game."
-    - "One result per line, e.g. Ran weekly playtests and turned the notes into design changes."
+    - Taught intro courses including IMS211, IMS212, and IMS213
+    - Supervised several student groups
   projects:
-    - title: "Project you worked on here (optional)"
-      desc: "One line describing it, e.g. A short puzzle game about light and shadow."
+    - title: Project you worked on here (optional)
+      desc: One line describing it, e.g. A short puzzle game about light and shadow.
       tags:
-        - "Tag, e.g. Level design"
+        - Tag, e.g. Level design
