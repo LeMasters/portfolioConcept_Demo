@@ -1,0 +1,12 @@
+# Technical site settings. Students don't edit this file.
+# Personal details (name, tagline, photos, links) are in params.yaml beside it.
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Portfolio"  # fallback only; the page title is built from the name in params.yaml
+theme = "PortfolioConcept"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+# Pages CMS's rich-text editor can write bits of HTML (underline, sized images)
+# into the About text. Hugo drops raw HTML unless this is on.
+[markup.goldmark.renderer]
+  unsafe = true

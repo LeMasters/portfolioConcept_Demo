@@ -1,0 +1,14 @@
+name = "PortfolioConcept"
+license = "MIT"
+description = "One-page portfolio theme for ETBD/Games students, edited through Pages CMS. Sources include kiyomi-portfolio."
+features = ["portfolio"]
+min_version = "0.128.0"
+
+[author]
+  name = "Garrison LeMasters"
+
+[original]
+  name = "kiyomi-portfolio"
+  author = "mathscantor"
+  homepage = "https://github.com/mathscantor/hugo-theme-kiyomi-portfolio"
+  repo = "https://github.com/mathscantor/hugo-theme-kiyomi-portfolio"

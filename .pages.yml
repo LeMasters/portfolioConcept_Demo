@@ -1,0 +1,209 @@
+# Pages CMS configuration for games_PortfolioConcept.
+# One form per editable file. See: https://pagescms.org/docs/configuration/
+#
+# Paths are written WITHOUT a leading slash (images/x.jpg, not /images/x.jpg)
+# so they work when the site lives in a subfolder (username.github.io/portfolio/).
+
+media:
+  - name: images
+    label: Images
+    input: static/images
+    output: images
+  - name: files
+    label: Files
+    input: static/files
+    output: files
+
+content:
+  - name: profile
+    label: Profile
+    type: file
+    path: config/_default/params.yaml
+    format: yaml
+    fields:
+      - name: firstName
+        label: First name
+        type: string
+        required: true
+      - name: lastName
+        label: Last name
+        type: string
+        required: true
+      - name: tagline
+        label: Tagline
+        type: string
+        description: Shown under your name, e.g. "Game designer and level builder".
+      - name: location
+        label: Location
+        type: string
+      - name: email
+        label: Email
+        type: string
+      - name: linkedin
+        label: LinkedIn URL
+        type: string
+        description: Your profile address, e.g. https://www.linkedin.com/in/your-name. Leave empty to hide LinkedIn links.
+      - name: profileImage
+        label: Profile photo
+        type: image
+        options:
+          media: images
+      - name: heroBackground
+        label: Wallpaper image (top of page)
+        type: image
+        options:
+          media: images
+      - name: resumeFile
+        label: Resume / CV (as downloadable PDF)
+        type: file
+        description: Leave field empty to hide the "Download Resume" button.
+        options:
+          media: files
+      - name: contactMessage
+        label: Contact message
+        type: string
+        description: First line of the contact section, e.g. "Looking for a level designer? Let's talk." Leave empty for a general invitation.
+      - name: description
+        label: Search and sharing description
+        type: text
+        description: One or two sentences to send to search engines and linker previews. Blank field falls back to tagline.
+      - name: favicon
+        type: string
+        hidden: true
+      - name: ogImage
+        type: string
+        hidden: true
+
+  - name: about
+    label: About
+    type: file
+    path: content/_index.md
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        type: string
+        hidden: true
+      - name: body
+        label: About text (rich text field)
+        type: rich-text
+
+  - name: projects
+    label: Projects
+    type: file
+    path: data/presentations.yaml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: event
+        label: Type or occasion
+        type: string
+        description: e.g. "Puzzle game · Unity" or "Global Game Jam".
+      - name: date
+        label: Year
+        type: string
+      - name: description
+        label: What you did
+        type: text
+      - name: tags
+        type: string
+        list: true
+      - name: media_src
+        label: Image
+        type: image
+        options:
+          media: images
+      - name: link
+        label: Link (itch.io, Steam, etc.)
+        type: string
+      - name: linkLabel
+        label: Link text
+        type: string
+        description: e.g. "Play it", "Watch the trailer", "See the album". Defaults to "View project".
+
+  - name: experience
+    label: Experience
+    type: file
+    path: data/experience.yaml
+    format: yaml
+    list: true
+    fields:
+      - name: company
+        label: Organization
+        type: string
+        required: true
+      - name: title
+        label: Role
+        type: string
+      - name: period
+        type: string
+        description: e.g. "Aug 2025 - Present".
+      - name: context
+        label: About the organization
+        type: text
+      - name: bullets
+        label: What you did
+        type: string
+        list: true
+      - name: projects
+        type: object
+        list: true
+        fields:
+          - name: title
+            type: string
+          - name: desc
+            label: Description
+            type: string
+          - name: tags
+            type: string
+            list: true
+
+  - name: skills
+    label: Skills
+    type: file
+    path: data/skills.yaml
+    format: yaml
+    list: true
+    fields:
+      - name: category
+        type: string
+        required: true
+      - name: items
+        label: Skills
+        type: object
+        list: true
+        fields:
+          - name: name
+            type: string
+          - name: explanation
+            type: text
+
+  - name: education
+    label: Education
+    type: file
+    path: data/education.yaml
+    format: yaml
+    list: true
+    fields:
+      - name: degree
+        type: string
+      - name: school
+        type: string
+      - name: year
+        type: string
+
+  - name: awards
+    label: Awards
+    type: file
+    path: data/awards.yaml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        type: string
+      - name: source
+        type: string
+      - name: link
+        type: string

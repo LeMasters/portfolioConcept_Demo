@@ -1,0 +1,4 @@
+- category: "Skill category, e.g. Design or Tools"
+  items:
+    - name: "Skill name, e.g. Level design"
+      explanation: "Where and how you used this skill; visitors see this when they click it. e.g. Blockouts and pacing for three puzzle levels in Unity."
