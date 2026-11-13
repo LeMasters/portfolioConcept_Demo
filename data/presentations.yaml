@@ -1,10 +1,11 @@
-- title: "Project title, e.g. Lantern Hours"
-  event: "Type or occasion, e.g. Puzzle game · Unity, or Global Game Jam"
-  date: "Year, e.g. 2026"
-  description: "What you did, in one or two lines: your role, the tools, the problem you solved, and the outcome."
+- title: Photos, Blessing of the Hounds 2026
+  event: Camargo Hunt's annual Blessing of the Hounds at the beginning of the
+    2026-27 season
+  date: "2026"
+  description: Photographer
   tags:
-    - "Tag, e.g. Level design"
-    - "Tag, e.g. Unity"
+    - photos
+    - equestrian
   media_src: images/project-placeholder.jpg
-  link: "https://example.itch.io/your-game"
-  linkLabel: "Link text, e.g. Play it"
+  link: https://example.itch.io/your-game
+  linkLabel: Link text, e.g. Play it
